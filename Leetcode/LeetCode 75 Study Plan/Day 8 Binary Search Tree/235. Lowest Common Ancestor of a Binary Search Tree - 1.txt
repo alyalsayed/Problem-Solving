@@ -1,0 +1,28 @@
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+class Solution:
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        # Define a helper function to traverse the BST using DFS
+        def dfs(node):
+            # If the node is None, return None
+            if not node:
+                return None
+            
+            # If the value of the node is greater than both p and q, then the LCA lies in the left subtree
+            if node.val > p.val and node.val > q.val:
+                return dfs(node.left)
+            
+            # If the value of the node is smaller than both p and q, then the LCA lies in the right subtree
+            if node.val < p.val and node.val < q.val:
+                return dfs(node.right)
+            
+            # If the value of the node is between p and q, or equal to p or q, then we have found the LCA
+            return node
+        
+        # Call the DFS helper function starting from the root node
+        return dfs(root)
+
