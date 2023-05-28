@@ -1,7 +1,7 @@
-# 1480. Running Sum of 1d Array
+# 844. Backspace String Compare
 
-link : https://leetcode.com/problems/running-sum-of-1d-array/
+link : https://leetcode.com/problems/backspace-string-compare/
 
-# 724. Find Pivot Index
+# 394. Decode String
 
-link : https://leetcode.com/problems/find-pivot-index/
+link : https://leetcode.com/problems/decode-string/
