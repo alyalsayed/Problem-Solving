@@ -1,5 +1,5 @@
 # Grid Paths
-
+<pre>
 Consider an n×n grid whose squares may have traps. It is not allowed to move to a square with a trap.
 
 Your task is to calculate the number of paths from the upper-left square to the lower-right square. You can only move right or down.
@@ -21,6 +21,7 @@ Constraints
 Example
 
 Input:
+
 4
 ....
 .*..
