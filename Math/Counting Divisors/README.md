@@ -1,5 +1,6 @@
 ## Counting Divisors
 
+<pre>
 Given n integers, your task is to report for each integer the number of its divisors.
 
 For example, if x=18 , the correct answer is 6 because its divisors are 1,2,3,6,9,18
